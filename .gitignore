@@ -122,13 +122,13 @@ ehthumbs.db
 Thumbs.db
 
 # Data files
-*.mp4
-*.avi
-*.mov
-*.mkv
-*.wav
-*.mp3
-*.flac
+# *.mp4  # Removed to allow LFS tracking
+# *.avi  # Removed to allow LFS tracking
+# *.mov  # Removed to allow LFS tracking
+# *.mkv  # Removed to allow LFS tracking
+# *.wav  # Removed to allow LFS tracking
+# *.mp3  # Removed to allow LFS tracking
+# *.flac # Removed to allow LFS tracking
 *.jpg
 *.jpeg
 *.png
@@ -143,11 +143,11 @@ Thumbs.db
 *.hdf5
 
 # Model files
-*.pth
-*.pt
-*.onnx
-*.pb
-*.tflite
+# *.pth  # Removed to allow LFS tracking
+# *.pt   # Removed to allow LFS tracking
+# *.onnx # Removed to allow LFS tracking
+# *.pb   # Removed to allow LFS tracking
+# *.tflite # Removed to allow LFS tracking
 
 # Logs
 *.log
