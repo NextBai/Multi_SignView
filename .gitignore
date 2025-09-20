@@ -137,6 +137,7 @@ Thumbs.db
 *.tiff
 *.webp
 *.json
+!features/trimodal_mapping.json
 *.npy
 *.pkl
 *.h5
