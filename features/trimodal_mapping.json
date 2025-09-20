@@ -1,0 +1,932 @@
+{
+  "again": {
+    "word": "again",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/again",
+        "optical_flow_dir": "features/optical_flow_features/again",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/again_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/again_max_fusion_24d.npy",
+          "features/audio_features/again_mean_fusion_24d.npy",
+          "features/audio_features/again_normalized_24d.npy",
+          "features/audio_features/again_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_again ↔ audio_again",
+      "visual_text_mapping": "video_again ↔ text_again",
+      "audio_text_correspondence": "audio_again ↔ text_again",
+      "trimodal_fusion": "video_again + audio_again + text_again"
+    }
+  },
+  "bird": {
+    "word": "bird",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/bird",
+        "optical_flow_dir": "features/optical_flow_features/bird",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/bird_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/bird_max_fusion_24d.npy",
+          "features/audio_features/bird_mean_fusion_24d.npy",
+          "features/audio_features/bird_normalized_24d.npy",
+          "features/audio_features/bird_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_bird ↔ audio_bird",
+      "visual_text_mapping": "video_bird ↔ text_bird",
+      "audio_text_correspondence": "audio_bird ↔ text_bird",
+      "trimodal_fusion": "video_bird + audio_bird + text_bird"
+    }
+  },
+  "book": {
+    "word": "book",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/book",
+        "optical_flow_dir": "features/optical_flow_features/book",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/book_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/book_max_fusion_24d.npy",
+          "features/audio_features/book_mean_fusion_24d.npy",
+          "features/audio_features/book_normalized_24d.npy",
+          "features/audio_features/book_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_book ↔ audio_book",
+      "visual_text_mapping": "video_book ↔ text_book",
+      "audio_text_correspondence": "audio_book ↔ text_book",
+      "trimodal_fusion": "video_book + audio_book + text_book"
+    }
+  },
+  "computer": {
+    "word": "computer",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/computer",
+        "optical_flow_dir": "features/optical_flow_features/computer",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/computer_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/computer_max_fusion_24d.npy",
+          "features/audio_features/computer_mean_fusion_24d.npy",
+          "features/audio_features/computer_normalized_24d.npy",
+          "features/audio_features/computer_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_computer ↔ audio_computer",
+      "visual_text_mapping": "video_computer ↔ text_computer",
+      "audio_text_correspondence": "audio_computer ↔ text_computer",
+      "trimodal_fusion": "video_computer + audio_computer + text_computer"
+    }
+  },
+  "cousin": {
+    "word": "cousin",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/cousin",
+        "optical_flow_dir": "features/optical_flow_features/cousin",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/cousin_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/cousin_max_fusion_24d.npy",
+          "features/audio_features/cousin_mean_fusion_24d.npy",
+          "features/audio_features/cousin_normalized_24d.npy",
+          "features/audio_features/cousin_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_cousin ↔ audio_cousin",
+      "visual_text_mapping": "video_cousin ↔ text_cousin",
+      "audio_text_correspondence": "audio_cousin ↔ text_cousin",
+      "trimodal_fusion": "video_cousin + audio_cousin + text_cousin"
+    }
+  },
+  "deaf": {
+    "word": "deaf",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/deaf",
+        "optical_flow_dir": "features/optical_flow_features/deaf",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/deaf_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/deaf_max_fusion_24d.npy",
+          "features/audio_features/deaf_mean_fusion_24d.npy",
+          "features/audio_features/deaf_normalized_24d.npy",
+          "features/audio_features/deaf_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_deaf ↔ audio_deaf",
+      "visual_text_mapping": "video_deaf ↔ text_deaf",
+      "audio_text_correspondence": "audio_deaf ↔ text_deaf",
+      "trimodal_fusion": "video_deaf + audio_deaf + text_deaf"
+    }
+  },
+  "drink": {
+    "word": "drink",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/drink",
+        "optical_flow_dir": "features/optical_flow_features/drink",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/drink_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/drink_max_fusion_24d.npy",
+          "features/audio_features/drink_mean_fusion_24d.npy",
+          "features/audio_features/drink_normalized_24d.npy",
+          "features/audio_features/drink_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_drink ↔ audio_drink",
+      "visual_text_mapping": "video_drink ↔ text_drink",
+      "audio_text_correspondence": "audio_drink ↔ text_drink",
+      "trimodal_fusion": "video_drink + audio_drink + text_drink"
+    }
+  },
+  "eat": {
+    "word": "eat",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/eat",
+        "optical_flow_dir": "features/optical_flow_features/eat",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/eat_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/eat_max_fusion_24d.npy",
+          "features/audio_features/eat_mean_fusion_24d.npy",
+          "features/audio_features/eat_normalized_24d.npy",
+          "features/audio_features/eat_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_eat ↔ audio_eat",
+      "visual_text_mapping": "video_eat ↔ text_eat",
+      "audio_text_correspondence": "audio_eat ↔ text_eat",
+      "trimodal_fusion": "video_eat + audio_eat + text_eat"
+    }
+  },
+  "finish": {
+    "word": "finish",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/finish",
+        "optical_flow_dir": "features/optical_flow_features/finish",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/finish_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/finish_max_fusion_24d.npy",
+          "features/audio_features/finish_mean_fusion_24d.npy",
+          "features/audio_features/finish_normalized_24d.npy",
+          "features/audio_features/finish_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_finish ↔ audio_finish",
+      "visual_text_mapping": "video_finish ↔ text_finish",
+      "audio_text_correspondence": "audio_finish ↔ text_finish",
+      "trimodal_fusion": "video_finish + audio_finish + text_finish"
+    }
+  },
+  "fish": {
+    "word": "fish",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/fish",
+        "optical_flow_dir": "features/optical_flow_features/fish",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/fish_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/fish_max_fusion_24d.npy",
+          "features/audio_features/fish_mean_fusion_24d.npy",
+          "features/audio_features/fish_normalized_24d.npy",
+          "features/audio_features/fish_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_fish ↔ audio_fish",
+      "visual_text_mapping": "video_fish ↔ text_fish",
+      "audio_text_correspondence": "audio_fish ↔ text_fish",
+      "trimodal_fusion": "video_fish + audio_fish + text_fish"
+    }
+  },
+  "friend": {
+    "word": "friend",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/friend",
+        "optical_flow_dir": "features/optical_flow_features/friend",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/friend_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/friend_max_fusion_24d.npy",
+          "features/audio_features/friend_mean_fusion_24d.npy",
+          "features/audio_features/friend_normalized_24d.npy",
+          "features/audio_features/friend_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_friend ↔ audio_friend",
+      "visual_text_mapping": "video_friend ↔ text_friend",
+      "audio_text_correspondence": "audio_friend ↔ text_friend",
+      "trimodal_fusion": "video_friend + audio_friend + text_friend"
+    }
+  },
+  "good": {
+    "word": "good",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/good",
+        "optical_flow_dir": "features/optical_flow_features/good",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/good_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/good_max_fusion_24d.npy",
+          "features/audio_features/good_mean_fusion_24d.npy",
+          "features/audio_features/good_normalized_24d.npy",
+          "features/audio_features/good_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_good ↔ audio_good",
+      "visual_text_mapping": "video_good ↔ text_good",
+      "audio_text_correspondence": "audio_good ↔ text_good",
+      "trimodal_fusion": "video_good + audio_good + text_good"
+    }
+  },
+  "happy": {
+    "word": "happy",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/happy",
+        "optical_flow_dir": "features/optical_flow_features/happy",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/happy_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/happy_max_fusion_24d.npy",
+          "features/audio_features/happy_mean_fusion_24d.npy",
+          "features/audio_features/happy_normalized_24d.npy",
+          "features/audio_features/happy_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_happy ↔ audio_happy",
+      "visual_text_mapping": "video_happy ↔ text_happy",
+      "audio_text_correspondence": "audio_happy ↔ text_happy",
+      "trimodal_fusion": "video_happy + audio_happy + text_happy"
+    }
+  },
+  "learn": {
+    "word": "learn",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/learn",
+        "optical_flow_dir": "features/optical_flow_features/learn",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/learn_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/learn_max_fusion_24d.npy",
+          "features/audio_features/learn_mean_fusion_24d.npy",
+          "features/audio_features/learn_normalized_24d.npy",
+          "features/audio_features/learn_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_learn ↔ audio_learn",
+      "visual_text_mapping": "video_learn ↔ text_learn",
+      "audio_text_correspondence": "audio_learn ↔ text_learn",
+      "trimodal_fusion": "video_learn + audio_learn + text_learn"
+    }
+  },
+  "like": {
+    "word": "like",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/like",
+        "optical_flow_dir": "features/optical_flow_features/like",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/like_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/like_max_fusion_24d.npy",
+          "features/audio_features/like_mean_fusion_24d.npy",
+          "features/audio_features/like_normalized_24d.npy",
+          "features/audio_features/like_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_like ↔ audio_like",
+      "visual_text_mapping": "video_like ↔ text_like",
+      "audio_text_correspondence": "audio_like ↔ text_like",
+      "trimodal_fusion": "video_like + audio_like + text_like"
+    }
+  },
+  "mother": {
+    "word": "mother",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/mother",
+        "optical_flow_dir": "features/optical_flow_features/mother",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/mother_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/mother_max_fusion_24d.npy",
+          "features/audio_features/mother_mean_fusion_24d.npy",
+          "features/audio_features/mother_normalized_24d.npy",
+          "features/audio_features/mother_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_mother ↔ audio_mother",
+      "visual_text_mapping": "video_mother ↔ text_mother",
+      "audio_text_correspondence": "audio_mother ↔ text_mother",
+      "trimodal_fusion": "video_mother + audio_mother + text_mother"
+    }
+  },
+  "need": {
+    "word": "need",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/need",
+        "optical_flow_dir": "features/optical_flow_features/need",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/need_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/need_max_fusion_24d.npy",
+          "features/audio_features/need_mean_fusion_24d.npy",
+          "features/audio_features/need_normalized_24d.npy",
+          "features/audio_features/need_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_need ↔ audio_need",
+      "visual_text_mapping": "video_need ↔ text_need",
+      "audio_text_correspondence": "audio_need ↔ text_need",
+      "trimodal_fusion": "video_need + audio_need + text_need"
+    }
+  },
+  "nice": {
+    "word": "nice",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/nice",
+        "optical_flow_dir": "features/optical_flow_features/nice",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/nice_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/nice_max_fusion_24d.npy",
+          "features/audio_features/nice_mean_fusion_24d.npy",
+          "features/audio_features/nice_normalized_24d.npy",
+          "features/audio_features/nice_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_nice ↔ audio_nice",
+      "visual_text_mapping": "video_nice ↔ text_nice",
+      "audio_text_correspondence": "audio_nice ↔ text_nice",
+      "trimodal_fusion": "video_nice + audio_nice + text_nice"
+    }
+  },
+  "no": {
+    "word": "no",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/no",
+        "optical_flow_dir": "features/optical_flow_features/no",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/no_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/no_max_fusion_24d.npy",
+          "features/audio_features/no_mean_fusion_24d.npy",
+          "features/audio_features/no_normalized_24d.npy",
+          "features/audio_features/no_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_no ↔ audio_no",
+      "visual_text_mapping": "video_no ↔ text_no",
+      "audio_text_correspondence": "audio_no ↔ text_no",
+      "trimodal_fusion": "video_no + audio_no + text_no"
+    }
+  },
+  "orange": {
+    "word": "orange",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/orange",
+        "optical_flow_dir": "features/optical_flow_features/orange",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/orange_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/orange_max_fusion_24d.npy",
+          "features/audio_features/orange_mean_fusion_24d.npy",
+          "features/audio_features/orange_normalized_24d.npy",
+          "features/audio_features/orange_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_orange ↔ audio_orange",
+      "visual_text_mapping": "video_orange ↔ text_orange",
+      "audio_text_correspondence": "audio_orange ↔ text_orange",
+      "trimodal_fusion": "video_orange + audio_orange + text_orange"
+    }
+  },
+  "school": {
+    "word": "school",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/school",
+        "optical_flow_dir": "features/optical_flow_features/school",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/school_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/school_max_fusion_24d.npy",
+          "features/audio_features/school_mean_fusion_24d.npy",
+          "features/audio_features/school_normalized_24d.npy",
+          "features/audio_features/school_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_school ↔ audio_school",
+      "visual_text_mapping": "video_school ↔ text_school",
+      "audio_text_correspondence": "audio_school ↔ text_school",
+      "trimodal_fusion": "video_school + audio_school + text_school"
+    }
+  },
+  "sister": {
+    "word": "sister",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/sister",
+        "optical_flow_dir": "features/optical_flow_features/sister",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/sister_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/sister_max_fusion_24d.npy",
+          "features/audio_features/sister_mean_fusion_24d.npy",
+          "features/audio_features/sister_normalized_24d.npy",
+          "features/audio_features/sister_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_sister ↔ audio_sister",
+      "visual_text_mapping": "video_sister ↔ text_sister",
+      "audio_text_correspondence": "audio_sister ↔ text_sister",
+      "trimodal_fusion": "video_sister + audio_sister + text_sister"
+    }
+  },
+  "student": {
+    "word": "student",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/student",
+        "optical_flow_dir": "features/optical_flow_features/student",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/student_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/student_max_fusion_24d.npy",
+          "features/audio_features/student_mean_fusion_24d.npy",
+          "features/audio_features/student_normalized_24d.npy",
+          "features/audio_features/student_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_student ↔ audio_student",
+      "visual_text_mapping": "video_student ↔ text_student",
+      "audio_text_correspondence": "audio_student ↔ text_student",
+      "trimodal_fusion": "video_student + audio_student + text_student"
+    }
+  },
+  "table": {
+    "word": "table",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/table",
+        "optical_flow_dir": "features/optical_flow_features/table",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/table_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/table_max_fusion_24d.npy",
+          "features/audio_features/table_mean_fusion_24d.npy",
+          "features/audio_features/table_normalized_24d.npy",
+          "features/audio_features/table_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_table ↔ audio_table",
+      "visual_text_mapping": "video_table ↔ text_table",
+      "audio_text_correspondence": "audio_table ↔ text_table",
+      "trimodal_fusion": "video_table + audio_table + text_table"
+    }
+  },
+  "teacher": {
+    "word": "teacher",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/teacher",
+        "optical_flow_dir": "features/optical_flow_features/teacher",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/teacher_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/teacher_max_fusion_24d.npy",
+          "features/audio_features/teacher_mean_fusion_24d.npy",
+          "features/audio_features/teacher_normalized_24d.npy",
+          "features/audio_features/teacher_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_teacher ↔ audio_teacher",
+      "visual_text_mapping": "video_teacher ↔ text_teacher",
+      "audio_text_correspondence": "audio_teacher ↔ text_teacher",
+      "trimodal_fusion": "video_teacher + audio_teacher + text_teacher"
+    }
+  },
+  "tired": {
+    "word": "tired",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/tired",
+        "optical_flow_dir": "features/optical_flow_features/tired",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/tired_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/tired_max_fusion_24d.npy",
+          "features/audio_features/tired_mean_fusion_24d.npy",
+          "features/audio_features/tired_normalized_24d.npy",
+          "features/audio_features/tired_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_tired ↔ audio_tired",
+      "visual_text_mapping": "video_tired ↔ text_tired",
+      "audio_text_correspondence": "audio_tired ↔ text_tired",
+      "trimodal_fusion": "video_tired + audio_tired + text_tired"
+    }
+  },
+  "want": {
+    "word": "want",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/want",
+        "optical_flow_dir": "features/optical_flow_features/want",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/want_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/want_max_fusion_24d.npy",
+          "features/audio_features/want_mean_fusion_24d.npy",
+          "features/audio_features/want_normalized_24d.npy",
+          "features/audio_features/want_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_want ↔ audio_want",
+      "visual_text_mapping": "video_want ↔ text_want",
+      "audio_text_correspondence": "audio_want ↔ text_want",
+      "trimodal_fusion": "video_want + audio_want + text_want"
+    }
+  },
+  "what": {
+    "word": "what",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/what",
+        "optical_flow_dir": "features/optical_flow_features/what",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/what_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/what_max_fusion_24d.npy",
+          "features/audio_features/what_mean_fusion_24d.npy",
+          "features/audio_features/what_normalized_24d.npy",
+          "features/audio_features/what_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_what ↔ audio_what",
+      "visual_text_mapping": "video_what ↔ text_what",
+      "audio_text_correspondence": "audio_what ↔ text_what",
+      "trimodal_fusion": "video_what + audio_what + text_what"
+    }
+  },
+  "white": {
+    "word": "white",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/white",
+        "optical_flow_dir": "features/optical_flow_features/white",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/white_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/white_max_fusion_24d.npy",
+          "features/audio_features/white_mean_fusion_24d.npy",
+          "features/audio_features/white_normalized_24d.npy",
+          "features/audio_features/white_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_white ↔ audio_white",
+      "visual_text_mapping": "video_white ↔ text_white",
+      "audio_text_correspondence": "audio_white ↔ text_white",
+      "trimodal_fusion": "video_white + audio_white + text_white"
+    }
+  },
+  "yes": {
+    "word": "yes",
+    "modalities": {
+      "visual": {
+        "mediapipe_dir": "features/mediapipe_features/yes",
+        "optical_flow_dir": "features/optical_flow_features/yes",
+        "available": true
+      },
+      "audio": {
+        "features_json": "features/audio_features/yes_audio_features.json",
+        "fusion_variants": [
+          "features/audio_features/yes_max_fusion_24d.npy",
+          "features/audio_features/yes_mean_fusion_24d.npy",
+          "features/audio_features/yes_normalized_24d.npy",
+          "features/audio_features/yes_weighted_fusion_24d.npy"
+        ],
+        "available": true
+      },
+      "text": {
+        "embeddings_dir": "features/text_embeddings",
+        "semantic_file": "features/semantic_features/semantic_analysis_fixed.json",
+        "available": true
+      }
+    },
+    "cross_modal_links": {
+      "visual_audio_alignment": "video_yes ↔ audio_yes",
+      "visual_text_mapping": "video_yes ↔ text_yes",
+      "audio_text_correspondence": "audio_yes ↔ text_yes",
+      "trimodal_fusion": "video_yes + audio_yes + text_yes"
+    }
+  }
+}
